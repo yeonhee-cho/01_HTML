@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛있는 피자가게</title>
+
+    <!-- 현업에서 많이 사용하는 스타일 태그 적용 방법 
+      <link                             참조할 css 파일 위치
+      rel="stylesheet"                  참조할 파일이 어떤 파일인가? -> 스타일시트
+      href="../css/01_피자가게연습.css"  ../ ->이전 폴더에서 / css 폴더 선택 / 원하는 파일 선택
+      />
+    -->
+    <link rel="stylesheet" href="../css/01_피자가게연습.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .title {
+        background-color: #ff7043;
+        font-size: 28px;
+        color: white;
+        padding: 20px;
+        margin: 0;
+      }
+      .nav {
+        margin: 10px auto;
+      }
+      a {
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #d84315;
+      }
+
+      .box {
+        background-color: #ffe0b2;
+
+        padding: 20px;
+        border: 5px solid #ff7043;
+        margin: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .pizza-list {
+        /* 피자리스트 div 내부에 
+        
+        피자아이템이라는 div가 여러가지 있음
+        div 들을 정렬할 때는 맨 바깥에 flex
+        display: flex; 작성해서 가로로 정렬하는 방법
+        */
+        display: flex;
+        justify-content: center;
+      }
+
+      .pizza-item {
+        width: 250px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        border: 3px solid #ffa726;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+    <div class="title">🍕맛있는 피자 가게</div>
+
+    <div class="nav">
+      <a href="#">홈</a>
+      <a href="#">메뉴</a>
+      <a href="#">주문</a>
+    </div>
+
+    <div class="box">
+      <strong>어서오세요!</strong><br />
+      저희 가게는 매일 신선한 자료로 만든<br />
+      최고의 피자를 제공합니다.
+    </div>
+
+    <div class="pizza-list">
+      <div class="pizz-item">
+        <img src="../images/pizza/불고기피자.png" alt="불고기피자" />
+        <h3>불고기피자</h3>
+        <p>고소한 치즈가 듬뿍!</p>
+      </div>
+      <div class="pizz-item">
+        <img src="../images/pizza/페퍼로니피자.png" alt="페퍼로니피자" />
+        <h3>페퍼로니피자</h3>
+        <p>매콤한 맛의 정석</p>
+      </div>
+
+      <!-- 
+        감자피자 - 고소한 맛이 가득한 감자가! 
+        고구마피자 - 달콤하게 허니머스타드와 어울리는 맛!
+        새우피자 - 오동통한 새우를 맛보고 싶다면 클릭하기
+      -->
+    </div>
+  </body>
+</html>
