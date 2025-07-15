@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>피자 주문 폼</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>피자 주문서</h1>
+    <form action="11_연습문제1결과.html">
+      <!-- 고객 정보 -->
+      <label>
+        고객명 :
+        <input type="text" name="clientName" />
+      </label>
+      <br />
+      <label>
+        전화번호 :
+        <input type="text" name="clientPhone" />
+      </label>
+      <br />
+      <label>
+        이메일 :
+        <input type="email" name="clientEmail" />
+      </label>
+      <br />
+      <!-- 피자 선택-->
+      <label>
+        피자선택:
+        <select name="pizza">
+          <option value="">피자를 선택하세요.</option>
+          <option value="페퍼로니">페퍼로니</option>
+        </select>
+      </label>
+      <!-- 사이즈 선택-->
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <label>
+          <input type="radio" name="size" value="Small" />
+          Small
+        </label>
+        <label>
+          <input type="radio" name="size" value="Medium" />
+          Medium
+        </label>
+        <label>
+          <input type="radio" name="size" value="Large" />
+          Large
+        </label>
+      </fieldset>
+      <!-- 토핑 선택-->
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <label>
+          <input type="checkbox" name="topping" value="베이컨" />
+          베이컨
+        </label>
+        <label>
+          <input type="radio" name="size" value="치즈" />
+          치즈
+        </label>
+        <label>
+          <input type="radio" name="size" value="양파" />
+          양파
+        </label>
+        <label>
+          <input type="radio" name="size" value="버섯" />
+          버섯
+        </label>
+      </fieldset>
+      <!-- 희망 배송 시간-->
+      <label
+        >희망 배송 시간 :
+        <input type="time" name="wishTime" />
+      </label>
+      <!-- 요청 사항-->
+      <label
+        >배송시 요청사항:
+        <textarea name="request" rows="3" cols="30"></textarea>
+      </label>
+
+      <!-- 제출-->
+      <button>주문하기</button>
+    </form>
+  </body>
+</html>
