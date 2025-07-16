@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>피자주문</title>
+    <style>
+      img {
+        width: 100px;
+        height: 100px;
+        border: 2px solid transparent;
+        vertical-align: middle;
+      }
+      label {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>🍕피자 주문 폼</h2>
+    <form>
+      <label>
+        주문날짜 :
+        <input type="date" name="date" />
+      </label>
+      <br />
+      <label>
+        배달 시간 :
+        <input type="time" name="time" />
+      </label>
+
+      <h3>🍕 피자 종류</h3>
+      <div class="toppings">
+        <label>
+          <input type="radio" name="pizza" value="불고기피자" />
+          불고기
+          <img
+            src="images/pizza/불고기피자.png"
+            alt="불고기피자"
+            class="pizza-type"
+          />
+        </label>
+        <label>
+          <input type="radio" name="pizza" value="감자피자" />
+          감자
+          <img
+            src="images/pizza/감자피자.png"
+            alt="감자피자"
+            class="pizza-type"
+          />
+        </label>
+        <label>
+          <input type="radio" name="pizza" value="새우피자" />
+          새우
+          <img
+            src="images/pizza/새우피자.png"
+            alt="새우피자"
+            class="pizza-type"
+          />
+        </label>
+        <label>
+          <input type="radio" name="pizza" value="고구마피자" />
+          고구마
+          <img
+            src="images/pizza/고구마피자.png"
+            alt="고구마피자"
+            class="pizza-type"
+          />
+        </label>
+
+        <h3>추가토핑</h3>
+        <label>
+          <input type="checkbox" name="topping" value="페퍼로니" />
+          <img src="images/pizza/페퍼로니.png" alt="페퍼로니" />
+        </label>
+        <label>
+          <input type="checkbox" name="topping" value="새우" />
+          <img src="images/pizza/새우.png" alt="새우" />
+        </label>
+        <label>
+          <input type="checkbox" name="topping" value="고구마" />
+          <img src="images/pizza/고구마.png" alt="고구마" />
+        </label>
+        <label>
+          <input type="checkbox" name="topping" value="치즈" />
+          <img src="images/pizza/치즈.png" alt="치즈" />
+        </label>
+        <label>
+          <input type="checkbox" name="topping" value="브로콜리" />
+          <img src="images/pizza/브로콜리.png" alt="브로콜리" />
+        </label>
+        <label>
+          <input type="checkbox" name="topping" value="올리브" />
+          <img src="images/pizza/올리브.png" alt="올리브" />
+        </label>
+
+        <h3>요청사항</h3>
+        <textarea name="memo" rows="4" cols="30" style="resize: none">
+        요청사항을 입력하세요.
+        </textarea>
+      </div>
+      <br />
+      <br />
+      <button>주문하기</button>
+    </form>
+  </body>
+</html>
